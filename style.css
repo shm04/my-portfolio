@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  background-image: url(imgs/image_geometry_1.png), url(imgs/image_geometry_2.png);
+  background-size: 111px 74px, 100%;
+  background-position: left 0 top 0, left 0 top 472px;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  height: 74px;
+}
+
+.ham-btn {
+  padding-top: 19px;
+  padding-right: 16px;
+  width: 20px;
+  height: 14px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.title {
+  font-family: 'Playfair Display', 'Courier New', Courier, monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 100%;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.text {
+  font-family: 'Poppins', 'Courier New', Courier, monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.start-btn {
+  text-decoration: none;
+  background-color: #1a2236;
+  font-family: 'Poppins', 'Courier New', Courier, monospace;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  margin-top: 20px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
