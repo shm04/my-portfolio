@@ -50,7 +50,7 @@ This is my personal portfolio, where you can find my projects and contact me.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](http://127.0.0.1:5500/index.html)
+- [Live Demo Link](https://shm04.github.io/my-portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -68,7 +68,7 @@ Your web browser
 
 Clone this repository to your desired folder:
 
-  cd my-folder
+  ``cd my-folder
   git clone git@github.com:shm04/my-portfolio.git
 
 ### Install
@@ -87,14 +87,13 @@ code my-portfolio
 
 To run tests, run the following command:
 
-npx stylelint "**/*.{css,scss}"
-npx hint .
+No tests were created for this project
 
 ### Deployment
 
 You can deploy this project using:
 
-VS Code
+Github Pages
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
