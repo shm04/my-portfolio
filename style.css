@@ -7,12 +7,12 @@ body {
 }
 
 .navbar {
-  display: flex;
-  justify-content: flex-end;
+  display: block;
   height: 74px;
 }
 
 .ham-btn {
+  float: right;
   padding-top: 19px;
   padding-right: 16px;
   width: 20px;
