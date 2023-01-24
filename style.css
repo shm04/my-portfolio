@@ -100,11 +100,12 @@ body {
 }
 
 .projects {
-  display: grid;
+  display: block;
 }
 
 .project-1 {
   background-color: #1a2236;
+  float: left;
 }
 
 .p-text {
