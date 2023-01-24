@@ -20,8 +20,8 @@ body {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
+  display: block;
+ float: left;
   height: 79vh;
   margin-left: 16px;
   margin-right: 16px;
@@ -38,8 +38,9 @@ body {
 }
 
 .p-img {
-  display: block;
+  display: inline-block;
   width: -webkit-fill-available;
+  width: 100%;
 }
 
 .text {
@@ -100,7 +101,8 @@ body {
 }
 
 .projects {
-  display: block;
+  display: inline-block;
+  width: 100%;
 }
 
 .project-1 {
