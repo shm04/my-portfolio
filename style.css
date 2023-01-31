@@ -815,28 +815,34 @@ body {
     background-position: left 508px top 3px;
   }
 
-  .navbar .nav-sec, .contact-nav {
+  .navbar .nav-sec,
+  .contact-nav {
     transition: all 0.5s ease-out;
   }
 
-  .nav-sec:hover, .nav-sec:focus, .contact-nav:hover, .contact-nav:focus  {
+  .nav-sec:hover,
+  .nav-sec:focus,
+  .contact-nav:hover,
+  .contact-nav:focus {
     background-color: #1a2236;
     padding: 10px;
     border-radius: 20px;
     color: #fff;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   }
 
-  .start-btn, .cv-btn, .see-btn {
-   transition: all 0.5s ease-out; 
+  .start-btn,
+  .cv-btn,
+  .see-btn {
+    transition: all 0.5s ease-out;
   }
 
-  .start-btn:hover, .cv-btn:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  .start-btn:hover,
+  .cv-btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   }
 
   .see-btn:hover {
-    box-shadow: 0 12px 16px 0 rgba(248, 246, 246, 0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(248, 246, 246, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   }
 }
-
