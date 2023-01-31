@@ -4,6 +4,7 @@ body {
   background-size: 111px 74px, 321px 160px;
   background-position: left 0 top 0, left 0 top 472px;
   background-repeat: no-repeat;
+  width: fit-content;
 }
 
 .navbar {
@@ -384,19 +385,10 @@ body {
   flex-direction: column;
 }
 
-.search1 {
-  background-color: #fff;
-  border: 1px solid #dfdfe0;
-  border-radius: 4px;
-  height: 52px;
-  margin-left: 18px;
-  margin-right: 14px;
-  margin-bottom: 8px;
-}
-
+.search1,
 .search2 {
   background-color: #fff;
-  border: 1px solid #1a2236;
+  border: 1px solid #dfdfe0;
   border-radius: 4px;
   height: 52px;
   margin-left: 18px;
@@ -496,7 +488,7 @@ body {
     background-image: url(imgs/dsktp-bg-1.png), url(imgs/image_dots.png);
     background-repeat: no-repeat;
     background-position: left 802px top 0, left 627px top 702px;
-    height: 145vh;
+    height: 120vh;
   }
 
   .title {
