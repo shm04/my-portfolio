@@ -1,7 +1,7 @@
 body {
   margin: 0;
   background-image: url(imgs/image_geometry_1.png), url(imgs/image_geometry_2.png);
-  background-size: 111px 74px, 321px 160px;
+  background-size: 111px 74px, 100%;
   background-position: left 0 top 0, left 0 top 472px;
   background-repeat: no-repeat;
   width: fit-content;
@@ -23,9 +23,8 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  height: 79vh;
-  margin-left: 16px;
-  margin-right: 16px;
+  height: 584px;
+  margin: 0 16px 0 16px;
 }
 
 .title {
@@ -248,6 +247,7 @@ body {
   list-style: none;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 0;
 }
 
