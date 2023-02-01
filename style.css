@@ -78,7 +78,8 @@ body {
   margin-right: 16px;
 }
 
-.start-btn:hover , .start-btn:focus {
+.start-btn:hover,
+.start-btn:focus {
   border: 1px solid #1a2236;
   background-color: #fff;
   color: #1a2236;
