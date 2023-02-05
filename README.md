@@ -25,6 +25,8 @@ This is my personal portfolio, where you can find my projects and contact me.
 
 **My personal portfolio** is a web page where you can find my information.
 
+In [this video](https://www.loom.com/share/7b052ff7ca72418bbcaac0df19ee9661) you can find more information about this project.
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
