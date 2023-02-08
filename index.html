@@ -12,21 +12,26 @@
 <body>
     <header>
         <nav class="navbar">
-            <a class="nav-sec" href="#">Hello</a>
-            <a class="nav-sec" href="#">Portfolio</a>
-            <a class="nav-sec" href="#">About</a>
-            <a class="contact-nav" href="#">Contact</a>
-            <img class="ham-btn" src="imgs/ic_menu.png">
+            <ul class="menu">
+                <li><a class="nav-sec" href="#hello">Hello</a></li>
+                <li><a class="nav-sec" href="#portfolio">Portfolio</a></li>
+                <li><a class="nav-sec" href="#about">About</a></li>
+                <li><a class="contact-nav" href="#contact">Contact</a></li>
+            </ul>
+            <button class="ham-btn" type="button">
+                <img class="menu-btn" src="imgs/ic_menu.png">
+                <img class="close-btn" src="imgs/close-btn.png">
+            </button>
         </nav>
     </header>
-    <section class="container">
+    <section id="hello" class="container">
         <h1 class="title">Sebastián Hernández</h1>
         <p class="text">Hello! I am a software developer! I can help you build a product, feature or website. Take a look of my works.
             If you like what you see and have a project you need coded, don’t hesitate and contact me.
         </p>
         <a class="start-btn" href="#">Start collaboration</a>
     </section>
-    <section class="projects">
+    <section id="portfolio" class="projects">
         <div class="container-one">
             <h1 class="projects-title">Projects</h1>
             <div class="project p-one">
@@ -105,7 +110,7 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section id="about" class="about">
         <div class="about-container">
             <h1 class="about-title">About</h1>
         <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ea eiusmod</p>
@@ -145,7 +150,7 @@
             </ul>
         </div>
     </section>
-    <section class="footer get-started">
+    <section id="contact" class="footer get-started">
         <h1 class="title-get-s">Get started</h1>
         <p class="text-get-s">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
         <form class="search-boxes" action="https://formspree.io/f/xvonzpwb" method="post"> 
@@ -166,5 +171,6 @@
             <li><img src="imgs/hand-logo.png"></li>
         </ul>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
