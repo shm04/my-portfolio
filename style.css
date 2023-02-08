@@ -491,6 +491,17 @@ body {
     align-items: center;
   }
 
+  .menu {
+    transform: translate(0);
+    display: flex;
+    flex-direction: row;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
   .nav-sec {
     font-family: 'Poppins', 'Courier New', Courier, monospace;
     font-style: normal;
