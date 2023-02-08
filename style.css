@@ -122,7 +122,8 @@ body {
   margin-right: 16px;
 }
 
-.start-btn:hover {
+.start-btn:hover,
+.start-btn:focus {
   border: 1px solid #1a2236;
   background-color: #fff;
   color: #1a2236;
@@ -218,7 +219,8 @@ body {
   align-items: center;
 }
 
-.see-btn:hover {
+.see-btn:hover,
+.see-btn:focus {
   border: 1px solid #fff;
   color: #fff;
   background-color: #1a2236;
@@ -271,7 +273,8 @@ body {
   transition-duration: 0.4s;
 }
 
-.cv-btn:hover {
+.cv-btn:hover,
+.cv-btn:focus {
   border: 1px solid #1a2236;
   background-color: #fff;
   color: #1a2236;
