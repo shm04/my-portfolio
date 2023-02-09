@@ -56,18 +56,19 @@ window.addEventListener('scroll', navHighlighter);
 const body = document.querySelector('body');
 const open = document.querySelector('.see-btn');
 
-open.addEventListener('click', ()=> {
-  const main = document.createElement('section');
+open.addEventListener('click', () => {
+  const main = document.createElement('div');
   main.className = 'main';
   const popup = document.createElement('div');
   popup.className = 'popup';
   popup.innerHTML = `
+  <div class="sub-container">
   <button class="close-btn-popup" type="button"><img src="imgs/close-btn.png"></button>
   <h2 class="p-name-popup">Project name goes here</h2>
   <ul class="lenguages-popup">
-    <li class="html">HTML/CSS</li>
-    <li class="ruby">Ruby on Rails</li>
-    <li class="plus">JavaScript</li>
+    <li class="html-popup">HTML/CSS</li>
+    <li class="ruby-popup">Ruby on Rails</li>
+    <li class="java-popup">JavaScript</li>
   </ul>
   <img class="p-img-popup one" src="imgs/img1.jpg" alt="First project demo">
   <div class="mini-imgs">
@@ -79,10 +80,22 @@ open.addEventListener('click', ()=> {
   <p class="popup-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
     Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
   </p>
+  <div class="buttons">
   <button class="see-live" type="button">See live<img class="download" src="imgs/ic_link.png"></button>
   <button class="see-src" type="button">See source<img class="download" src="imgs/github-black.png"></button>
+  </div>
+  <div class="arrow-btns">
+    <button class="previous" type="button"><img src="imgs/arrow-l.png">Previous project</button>
+    <button class="next" type="button">Next project<img src="imgs/arrow-r.png"></button>
+  </div>
+  </div>
   `;
 
   main.appendChild(popup);
   body.appendChild(main);
-})
+
+  const close = document.querySelector('.close-btn-popup');
+  close.addEventListener('click', () => {
+    body.removeChild(main);
+  });
+});
