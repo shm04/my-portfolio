@@ -382,6 +382,8 @@ openThreeImg.addEventListener('click', () => {
   mainThree.appendChild(popupThree);
   body.appendChild(mainThree);
 
+  // Project four
+
   const close = document.querySelector('.close-btn-popup');
   close.addEventListener('click', () => {
     body.removeChild(mainThree);
