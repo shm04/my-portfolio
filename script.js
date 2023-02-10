@@ -53,8 +53,68 @@ function navHighlighter() {
 
 window.addEventListener('scroll', navHighlighter);
 
+// Projects object
+
+const projects = {
+  projectOne: {
+    title: 'Project One',
+    languages: ['HTML/CSS', 'Ruby on Rials', 'JavaScipt'],
+    imgURL: ['../imgs/img1.jpg'],
+    content: 'Project one description...',
+    live: '#',
+    source: '#',
+  },
+
+  projectTwo: {
+    title: 'Project Two',
+    languages: ['HTML/CSS', 'Ruby on Rials', 'JavaScipt'],
+    imgURL: ['../imgs/img2.jpg'],
+    content: 'Project two description...',
+    live: '#',
+    source: '#',
+  },
+
+  projectThree: {
+    title: 'Project Three',
+    languages: ['HTML/CSS', 'Ruby on Rials', 'JavaScipt'],
+    imgURL: ['../imgs/img3.jpg'],
+    content: 'Project three description...',
+    live: '#',
+    source: '#',
+  },
+
+  projectFour: {
+    title: 'Project Four',
+    languages: ['HTML/CSS', 'Ruby on Rials', 'JavaScipt'],
+    imgURL: ['../imgs/img4.jpg'],
+    content: 'Project four description...',
+    live: '#',
+    source: '#',
+  },
+
+  projectFive: {
+    title: 'Project Five',
+    languages: ['HTML/CSS', 'Ruby on Rials', 'JavaScipt'],
+    imgURL: ['../imgs/img5.jpg'],
+    content: 'Project five description...',
+    live: '#',
+    source: '#',
+  },
+
+  projectSix: {
+    title: 'Project Six',
+    languages: ['HTML/CSS', 'Ruby on Rials', 'JavaScipt'],
+    imgURL: ['../imgs/img6.jpg'],
+    content: 'Project six description...',
+    live: '#',
+    source: '#',
+  },
+};
+
+// Project one
+
 const body = document.querySelector('body');
-const open = document.querySelector('.see-btn');
+const open = document.querySelector('.see-btn-one');
 
 open.addEventListener('click', () => {
   const main = document.createElement('div');
@@ -64,25 +124,23 @@ open.addEventListener('click', () => {
   popup.innerHTML = `
   <div class="sub-container">
   <button class="close-btn-popup" type="button"><img src="imgs/close-btn.png"></button>
-  <h2 class="p-name-popup">Project name goes here</h2>
+  <h2 class="p-name-popup">${projects.projectOne.title}</h2>
   <ul class="lenguages-popup">
-    <li class="html-popup">HTML/CSS</li>
-    <li class="ruby-popup">Ruby on Rails</li>
-    <li class="java-popup">JavaScript</li>
+    <li class="html-popup">${projects.projectOne.languages[0]}</li>
+    <li class="ruby-popup">${projects.projectOne.languages[1]}</li>
+    <li class="java-popup">${projects.projectOne.languages[2]}</li>
   </ul>
-  <img class="p-img-popup one" src="imgs/img1.jpg" alt="First project demo">
+  <img class="p-img-popup one" src=${projects.projectOne.imgURL} alt="First project demo">
   <div class="mini-imgs">
-  <img class="p-img-popup-mini one" src="imgs/img1.jpg" alt="First project demo">
-  <img class="p-img-popup-mini one" src="imgs/img1.jpg" alt="First project demo">
-  <img class="p-img-popup-mini one" src="imgs/img1.jpg" alt="First project demo">
-  <img class="p-img-popup-mini one" src="imgs/img1.jpg" alt="First project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectOne.imgURL} alt="First project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectOne.imgURL} alt="First project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectOne.imgURL} alt="First project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectOne.imgURL} alt="First project demo">
   </div>
-  <p class="popup-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-    Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
-  </p>
+  <p class="popup-text">${projects.projectOne.content}</p>
   <div class="buttons">
-  <button class="see-live" type="button">See live<img class="download" src="imgs/ic_link.png"></button>
-  <button class="see-src" type="button">See source<img class="download" src="imgs/github-black.png"></button>
+  <a class="see-live" href=${projects.projectOne.live}>See live<img class="download" src="imgs/ic_link.png"></a>
+  <a class="see-src" href=${projects.projectOne.source}>See source<img class="download" src="imgs/github-black.png"></a>
   </div>
   <div class="arrow-btns">
     <button class="previous" type="button"><img src="imgs/arrow-l.png">Previous project</button>
@@ -97,5 +155,235 @@ open.addEventListener('click', () => {
   const close = document.querySelector('.close-btn-popup');
   close.addEventListener('click', () => {
     body.removeChild(main);
+  });
+});
+
+// Project one img
+
+const openImg = document.querySelector('.one');
+
+openImg.addEventListener('click', () => {
+  const main = document.createElement('div');
+  main.className = 'main';
+  const popup = document.createElement('div');
+  popup.className = 'popup';
+  popup.innerHTML = `
+  <div class="sub-container">
+  <button class="close-btn-popup" type="button"><img src="imgs/close-btn.png"></button>
+  <h2 class="p-name-popup">${projects.projectOne.title}</h2>
+  <ul class="lenguages-popup">
+    <li class="html-popup">${projects.projectOne.languages[0]}</li>
+    <li class="ruby-popup">${projects.projectOne.languages[1]}</li>
+    <li class="java-popup">${projects.projectOne.languages[2]}</li>
+  </ul>
+  <img class="p-img-popup one" src=${projects.projectOne.imgURL} alt="First project demo">
+  <div class="mini-imgs">
+  <img class="p-img-popup-mini one" src=${projects.projectOne.imgURL} alt="First project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectOne.imgURL} alt="First project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectOne.imgURL} alt="First project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectOne.imgURL} alt="First project demo">
+  </div>
+  <p class="popup-text">${projects.projectOne.content}</p>
+  <div class="buttons">
+  <a class="see-live" href=${projects.projectOne.live}>See live<img class="download" src="imgs/ic_link.png"></a>
+  <a class="see-src" href=${projects.projectOne.source}>See source<img class="download" src="imgs/github-black.png"></a>
+  </div>
+  <div class="arrow-btns">
+    <button class="previous" type="button"><img src="imgs/arrow-l.png">Previous project</button>
+    <button class="next" type="button">Next project<img src="imgs/arrow-r.png"></button>
+  </div>
+  </div>
+  `;
+
+  main.appendChild(popup);
+  body.appendChild(main);
+
+  const close = document.querySelector('.close-btn-popup');
+  close.addEventListener('click', () => {
+    body.removeChild(main);
+  });
+});
+
+// Project two
+
+const openTwo = document.querySelector('.see-btn-two');
+
+openTwo.addEventListener('click', () => {
+  const mainTwo = document.createElement('div');
+  mainTwo.className = 'main-two';
+  const popupTwo = document.createElement('div');
+  popupTwo.className = 'popup-two';
+  popupTwo.innerHTML = `
+  <div class="sub-container">
+  <button class="close-btn-popup" type="button"><img src="imgs/close-btn.png"></button>
+  <h2 class="p-name-popup">${projects.projectTwo.title}</h2>
+  <ul class="lenguages-popup">
+    <li class="html-popup">${projects.projectTwo.languages[0]}</li>
+    <li class="ruby-popup">${projects.projectTwo.languages[1]}</li>
+    <li class="java-popup">${projects.projectTwo.languages[2]}</li>
+  </ul>
+  <img class="p-img-popup one" src=${projects.projectTwo.imgURL} alt="First project demo">
+  <div class="mini-imgs">
+  <img class="p-img-popup-mini one" src=${projects.projectTwo.imgURL} alt="First project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectTwo.imgURL} alt="First project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectTwo.imgURL} alt="First project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectTwo.imgURL} alt="First project demo">
+  </div>
+  <p class="popup-text">${projects.projectTwo.content}</p>
+  <div class="buttons">
+  <a class="see-live" href=${projects.projectTwo.live}>See live<img class="download" src="imgs/ic_link.png"></a>
+  <a class="see-src" href=${projects.projectTwo.source}>See source<img class="download" src="imgs/github-black.png"></a>
+  </div>
+  <div class="arrow-btns">
+    <button class="previous" type="button"><img src="imgs/arrow-l.png">Previous project</button>
+    <button class="next" type="button">Next project<img src="imgs/arrow-r.png"></button>
+  </div>
+  </div>
+  `;
+
+  mainTwo.appendChild(popupTwo);
+  body.appendChild(mainTwo);
+
+  const close = document.querySelector('.close-btn-popup');
+  close.addEventListener('click', () => {
+    body.removeChild(mainTwo);
+  });
+});
+
+// Project two img
+
+const openTwoImg = document.querySelector('.two');
+
+openTwoImg.addEventListener('click', () => {
+  const mainTwo = document.createElement('div');
+  mainTwo.className = 'main-two';
+  const popupTwo = document.createElement('div');
+  popupTwo.className = 'popup-two';
+  popupTwo.innerHTML = `
+  <div class="sub-container">
+  <button class="close-btn-popup" type="button"><img src="imgs/close-btn.png"></button>
+  <h2 class="p-name-popup">${projects.projectTwo.title}</h2>
+  <ul class="lenguages-popup">
+    <li class="html-popup">${projects.projectTwo.languages[0]}</li>
+    <li class="ruby-popup">${projects.projectTwo.languages[1]}</li>
+    <li class="java-popup">${projects.projectTwo.languages[2]}</li>
+  </ul>
+  <img class="p-img-popup one" src=${projects.projectTwo.imgURL} alt="First project demo">
+  <div class="mini-imgs">
+  <img class="p-img-popup-mini one" src=${projects.projectTwo.imgURL} alt="First project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectTwo.imgURL} alt="First project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectTwo.imgURL} alt="First project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectTwo.imgURL} alt="First project demo">
+  </div>
+  <p class="popup-text">${projects.projectTwo.content}</p>
+  <div class="buttons">
+  <a class="see-live" href=${projects.projectTwo.live}>See live<img class="download" src="imgs/ic_link.png"></a>
+  <a class="see-src" href=${projects.projectTwo.source}>See source<img class="download" src="imgs/github-black.png"></a>
+  </div>
+  <div class="arrow-btns">
+    <button class="previous" type="button"><img src="imgs/arrow-l.png">Previous project</button>
+    <button class="next" type="button">Next project<img src="imgs/arrow-r.png"></button>
+  </div>
+  </div>
+  `;
+
+  mainTwo.appendChild(popupTwo);
+  body.appendChild(mainTwo);
+
+  const close = document.querySelector('.close-btn-popup');
+  close.addEventListener('click', () => {
+    body.removeChild(mainTwo);
+  });
+});
+
+// Project three
+
+const openThree = document.querySelector('.see-btn-three');
+
+openThree.addEventListener('click', () => {
+  const mainThree = document.createElement('div');
+  mainThree.className = 'main-three';
+  const popupThree = document.createElement('div');
+  popupThree.className = 'popup-three';
+  popupThree.innerHTML = `
+  <div class="sub-container">
+  <button class="close-btn-popup" type="button"><img src="imgs/close-btn.png"></button>
+  <h2 class="p-name-popup">${projects.projectThree.title}</h2>
+  <ul class="lenguages-popup">
+    <li class="html-popup">${projects.projectThree.languages[0]}</li>
+    <li class="ruby-popup">${projects.projectThree.languages[1]}</li>
+    <li class="java-popup">${projects.projectThree.languages[2]}</li>
+  </ul>
+  <img class="p-img-popup one" src=${projects.projectThree.imgURL} alt="First project demo">
+  <div class="mini-imgs">
+  <img class="p-img-popup-mini one" src=${projects.projectThree.imgURL} alt="First project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectThree.imgURL} alt="First project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectThree.imgURL} alt="First project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectThree.imgURL} alt="First project demo">
+  </div>
+  <p class="popup-text">${projects.projectThree.content}</p>
+  <div class="buttons">
+  <a class="see-live" href=${projects.projectThree.live}>See live<img class="download" src="imgs/ic_link.png"></a>
+  <a class="see-src" href=${projects.projectThree.source}>See source<img class="download" src="imgs/github-black.png"></a>
+  </div>
+  <div class="arrow-btns">
+    <button class="previous" type="button"><img src="imgs/arrow-l.png">Previous project</button>
+    <button class="next" type="button">Next project<img src="imgs/arrow-r.png"></button>
+  </div>
+  </div>
+  `;
+
+  mainThree.appendChild(popupThree);
+  body.appendChild(mainThree);
+
+  const close = document.querySelector('.close-btn-popup');
+  close.addEventListener('click', () => {
+    body.removeChild(mainThree);
+  });
+});
+
+// Project three img
+
+const openThreeImg = document.querySelector('.three');
+
+openThreeImg.addEventListener('click', () => {
+  const mainThree = document.createElement('div');
+  mainThree.className = 'main-three';
+  const popupThree = document.createElement('div');
+  popupThree.className = 'popup-three';
+  popupThree.innerHTML = `
+  <div class="sub-container">
+  <button class="close-btn-popup" type="button"><img src="imgs/close-btn.png"></button>
+  <h2 class="p-name-popup">${projects.projectThree.title}</h2>
+  <ul class="lenguages-popup">
+    <li class="html-popup">${projects.projectThree.languages[0]}</li>
+    <li class="ruby-popup">${projects.projectThree.languages[1]}</li>
+    <li class="java-popup">${projects.projectThree.languages[2]}</li>
+  </ul>
+  <img class="p-img-popup one" src=${projects.projectThree.imgURL} alt="First project demo">
+  <div class="mini-imgs">
+  <img class="p-img-popup-mini one" src=${projects.projectThree.imgURL} alt="First project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectThree.imgURL} alt="First project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectThree.imgURL} alt="First project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectThree.imgURL} alt="First project demo">
+  </div>
+  <p class="popup-text">${projects.projectThree.content}</p>
+  <div class="buttons">
+  <a class="see-live" href=${projects.projectThree.live}>See live<img class="download" src="imgs/ic_link.png"></a>
+  <a class="see-src" href=${projects.projectThree.source}>See source<img class="download" src="imgs/github-black.png"></a>
+  </div>
+  <div class="arrow-btns">
+    <button class="previous" type="button"><img src="imgs/arrow-l.png">Previous project</button>
+    <button class="next" type="button">Next project<img src="imgs/arrow-r.png"></button>
+  </div>
+  </div>
+  `;
+
+  mainThree.appendChild(popupThree);
+  body.appendChild(mainThree);
+
+  const close = document.querySelector('.close-btn-popup');
+  close.addEventListener('click', () => {
+    body.removeChild(mainThree);
   });
 });
