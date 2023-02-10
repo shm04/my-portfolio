@@ -387,3 +387,276 @@ openThreeImg.addEventListener('click', () => {
     body.removeChild(mainThree);
   });
 });
+const openFour = document.querySelector('.see-btn-four');
+
+openFour.addEventListener('click', () => {
+  const mainFour = document.createElement('div');
+  mainFour.className = 'main-four';
+  const popupFour = document.createElement('div');
+  popupFour.className = 'popup-four';
+  popupFour.innerHTML = `
+  <div class="sub-container">
+  <button class="close-btn-popup" type="button"><img src="imgs/close-btn.png"></button>
+  <h2 class="p-name-popup">${projects.projectFour.title}</h2>
+  <ul class="lenguages-popup">
+    <li class="html-popup">${projects.projectFour.languages[0]}</li>
+    <li class="ruby-popup">${projects.projectFour.languages[1]}</li>
+    <li class="java-popup">${projects.projectFour.languages[2]}</li>
+  </ul>
+  <img class="p-img-popup one" src=${projects.projectFour.imgURL} alt="First project demo">
+  <div class="mini-imgs">
+  <img class="p-img-popup-mini one" src=${projects.projectFour.imgURL} alt="First project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectFour.imgURL} alt="First project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectFour.imgURL} alt="First project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectFour.imgURL} alt="First project demo">
+  </div>
+  <p class="popup-text">${projects.projectFour.content}</p>
+  <div class="buttons">
+  <a class="see-live" href=${projects.projectFour.live}>See live<img class="download" src="imgs/ic_link.png"></a>
+  <a class="see-src" href=${projects.projectFour.source}>See source<img class="download" src="imgs/github-black.png"></a>
+  </div>
+  <div class="arrow-btns">
+    <button class="previous" type="button"><img src="imgs/arrow-l.png">Previous project</button>
+    <button class="next" type="button">Next project<img src="imgs/arrow-r.png"></button>
+  </div>
+  </div>
+  `;
+
+  mainFour.appendChild(popupFour);
+  body.appendChild(mainFour);
+
+  const close = document.querySelector('.close-btn-popup');
+  close.addEventListener('click', () => {
+    body.removeChild(mainFour);
+  });
+});
+
+// Project four img
+
+const openFourImg = document.querySelector('.four');
+
+openFourImg.addEventListener('click', () => {
+  const mainFour = document.createElement('div');
+  mainFour.className = 'main-four';
+  const popupFour = document.createElement('div');
+  popupFour.className = 'popup-four';
+  popupFour.innerHTML = `
+  <div class="sub-container">
+  <button class="close-btn-popup" type="button"><img src="imgs/close-btn.png"></button>
+  <h2 class="p-name-popup">${projects.projectFour.title}</h2>
+  <ul class="lenguages-popup">
+    <li class="html-popup">${projects.projectFour.languages[0]}</li>
+    <li class="ruby-popup">${projects.projectFour.languages[1]}</li>
+    <li class="java-popup">${projects.projectFour.languages[2]}</li>
+  </ul>
+  <img class="p-img-popup one" src=${projects.projectFour.imgURL} alt="First project demo">
+  <div class="mini-imgs">
+  <img class="p-img-popup-mini one" src=${projects.projectFour.imgURL} alt="First project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectFour.imgURL} alt="First project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectFour.imgURL} alt="First project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectFour.imgURL} alt="First project demo">
+  </div>
+  <p class="popup-text">${projects.projectFour.content}</p>
+  <div class="buttons">
+  <a class="see-live" href=${projects.projectFour.live}>See live<img class="download" src="imgs/ic_link.png"></a>
+  <a class="see-src" href=${projects.projectFour.source}>See source<img class="download" src="imgs/github-black.png"></a>
+  </div>
+  <div class="arrow-btns">
+    <button class="previous" type="button"><img src="imgs/arrow-l.png">Previous project</button>
+    <button class="next" type="button">Next project<img src="imgs/arrow-r.png"></button>
+  </div>
+  </div>
+  `;
+
+  mainFour.appendChild(popupFour);
+  body.appendChild(mainFour);
+
+  const close = document.querySelector('.close-btn-popup');
+  close.addEventListener('click', () => {
+    body.removeChild(mainFour);
+  });
+});
+
+// Project five
+
+const openFive = document.querySelector('.see-btn-five');
+
+openFive.addEventListener('click', () => {
+  const mainFive = document.createElement('div');
+  mainFive.className = 'main-five';
+  const popupFive = document.createElement('div');
+  popupFive.className = 'popup-five';
+  popupFive.innerHTML = `
+  <div class="sub-container">
+  <button class="close-btn-popup" type="button"><img src="imgs/close-btn.png"></button>
+  <h2 class="p-name-popup">${projects.projectFive.title}</h2>
+  <ul class="lenguages-popup">
+    <li class="html-popup">${projects.projectFive.languages[0]}</li>
+    <li class="ruby-popup">${projects.projectFive.languages[1]}</li>
+    <li class="java-popup">${projects.projectFive.languages[2]}</li>
+  </ul>
+  <img class="p-img-popup one" src=${projects.projectFive.imgURL} alt="First project demo">
+  <div class="mini-imgs">
+  <img class="p-img-popup-mini one" src=${projects.projectFive.imgURL} alt="First project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectFive.imgURL} alt="First project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectFive.imgURL} alt="First project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectFive.imgURL} alt="First project demo">
+  </div>
+  <p class="popup-text">${projects.projectFive.content}</p>
+  <div class="buttons">
+  <a class="see-live" href=${projects.projectFive.live}>See live<img class="download" src="imgs/ic_link.png"></a>
+  <a class="see-src" href=${projects.projectFive.source}>See source<img class="download" src="imgs/github-black.png"></a>
+  </div>
+  <div class="arrow-btns">
+    <button class="previous" type="button"><img src="imgs/arrow-l.png">Previous project</button>
+    <button class="next" type="button">Next project<img src="imgs/arrow-r.png"></button>
+  </div>
+  </div>
+  `;
+
+  mainFive.appendChild(popupFive);
+  body.appendChild(mainFive);
+
+  const close = document.querySelector('.close-btn-popup');
+  close.addEventListener('click', () => {
+    body.removeChild(mainFive);
+  });
+});
+
+// Project five img
+
+const openFiveImg = document.querySelector('.five');
+
+openFiveImg.addEventListener('click', () => {
+  const mainFive = document.createElement('div');
+  mainFive.className = 'main-five';
+  const popupFive = document.createElement('div');
+  popupFive.className = 'popup-five';
+  popupFive.innerHTML = `
+  <div class="sub-container">
+  <button class="close-btn-popup" type="button"><img src="imgs/close-btn.png"></button>
+  <h2 class="p-name-popup">${projects.projectFive.title}</h2>
+  <ul class="lenguages-popup">
+    <li class="html-popup">${projects.projectFive.languages[0]}</li>
+    <li class="ruby-popup">${projects.projectFive.languages[1]}</li>
+    <li class="java-popup">${projects.projectFive.languages[2]}</li>
+  </ul>
+  <img class="p-img-popup one" src=${projects.projectFive.imgURL} alt="First project demo">
+  <div class="mini-imgs">
+  <img class="p-img-popup-mini one" src=${projects.projectFive.imgURL} alt="First project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectFive.imgURL} alt="First project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectFive.imgURL} alt="First project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectFive.imgURL} alt="First project demo">
+  </div>
+  <p class="popup-text">${projects.projectFive.content}</p>
+  <div class="buttons">
+  <a class="see-live" href=${projects.projectFive.live}>See live<img class="download" src="imgs/ic_link.png"></a>
+  <a class="see-src" href=${projects.projectFive.source}>See source<img class="download" src="imgs/github-black.png"></a>
+  </div>
+  <div class="arrow-btns">
+    <button class="previous" type="button"><img src="imgs/arrow-l.png">Previous project</button>
+    <button class="next" type="button">Next project<img src="imgs/arrow-r.png"></button>
+  </div>
+  </div>
+  `;
+
+  mainFive.appendChild(popupFive);
+  body.appendChild(mainFive);
+
+  const close = document.querySelector('.close-btn-popup');
+  close.addEventListener('click', () => {
+    body.removeChild(mainFive);
+  });
+});
+
+// Project six
+
+const openSix = document.querySelector('.see-btn-six');
+
+openSix.addEventListener('click', () => {
+  const mainSix = document.createElement('div');
+  mainSix.className = 'main-six';
+  const popupSix = document.createElement('div');
+  popupSix.className = 'popup-six';
+  popupSix.innerHTML = `
+  <div class="sub-container">
+  <button class="close-btn-popup" type="button"><img src="imgs/close-btn.png"></button>
+  <h2 class="p-name-popup">${projects.projectSix.title}</h2>
+  <ul class="lenguages-popup">
+    <li class="html-popup">${projects.projectSix.languages[0]}</li>
+    <li class="ruby-popup">${projects.projectSix.languages[1]}</li>
+    <li class="java-popup">${projects.projectSix.languages[2]}</li>
+  </ul>
+  <img class="p-img-popup one" src=${projects.projectSix.imgURL} alt="Sixth project demo">
+  <div class="mini-imgs">
+  <img class="p-img-popup-mini one" src=${projects.projectSix.imgURL} alt="Sixth project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectSix.imgURL} alt="Sixth project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectSix.imgURL} alt="Sixth project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectSix.imgURL} alt="Sixth project demo">
+  </div>
+  <p class="popup-text">${projects.projectSix.content}</p>
+  <div class="buttons">
+  <a class="see-live" href=${projects.projectSix.live}>See live<img class="download" src="imgs/ic_link.png"></a>
+  <a class="see-src" href=${projects.projectSix.source}>See source<img class="download" src="imgs/github-black.png"></a>
+  </div>
+  <div class="arrow-btns">
+    <button class="previous" type="button"><img src="imgs/arrow-l.png">Previous project</button>
+    <button class="next" type="button">Next project<img src="imgs/arrow-r.png"></button>
+  </div>
+  </div>
+  `;
+
+  mainSix.appendChild(popupSix);
+  body.appendChild(mainSix);
+
+  const close = document.querySelector('.close-btn-popup');
+  close.addEventListener('click', () => {
+    body.removeChild(mainSix);
+  });
+});
+
+// Project six img
+
+const openSixImg = document.querySelector('.six');
+
+openSixImg.addEventListener('click', () => {
+  const mainSix = document.createElement('div');
+  mainSix.className = 'main-six';
+  const popupSix = document.createElement('div');
+  popupSix.className = 'popup-six';
+  popupSix.innerHTML = `
+  <div class="sub-container">
+  <button class="close-btn-popup" type="button"><img src="imgs/close-btn.png"></button>
+  <h2 class="p-name-popup">${projects.projectSix.title}</h2>
+  <ul class="lenguages-popup">
+    <li class="html-popup">${projects.projectSix.languages[0]}</li>
+    <li class="ruby-popup">${projects.projectSix.languages[1]}</li>
+    <li class="java-popup">${projects.projectSix.languages[2]}</li>
+  </ul>
+  <img class="p-img-popup one" src=${projects.projectSix.imgURL} alt="Sixth project demo">
+  <div class="mini-imgs">
+  <img class="p-img-popup-mini one" src=${projects.projectSix.imgURL} alt="Sixth project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectSix.imgURL} alt="Sixth project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectSix.imgURL} alt="Sixth project demo">
+  <img class="p-img-popup-mini one" src=${projects.projectSix.imgURL} alt="Sixth project demo">
+  </div>
+  <p class="popup-text">${projects.projectSix.content}</p>
+  <div class="buttons">
+  <a class="see-live" href=${projects.projectSix.live}>See live<img class="download" src="imgs/ic_link.png"></a>
+  <a class="see-src" href=${projects.projectSix.source}>See source<img class="download" src="imgs/github-black.png"></a>
+  </div>
+  <div class="arrow-btns">
+    <button class="previous" type="button"><img src="imgs/arrow-l.png">Previous project</button>
+    <button class="next" type="button">Next project<img src="imgs/arrow-r.png"></button>
+  </div>
+  </div>
+  `;
+
+  mainSix.appendChild(popupSix);
+  body.appendChild(mainSix);
+
+  const close = document.querySelector('.close-btn-popup');
+  close.addEventListener('click', () => {
+    body.removeChild(mainSix);
+  });
+});
