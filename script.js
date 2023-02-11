@@ -662,3 +662,14 @@ openSixImg.addEventListener('click', () => {
     body.removeChild(mainSix);
   });
 });
+
+const form = document.querySelector('.search-boxes');
+
+form.addEventListener('submit', (event) => {
+  const errorMessage = document.querySelector('.error-message');
+  const email = form.elements[1].value;
+  if (email.toLowerCase() !== email) {
+    errorMessage.style.display = 'flex';
+    event.preventDefault();
+  }
+});

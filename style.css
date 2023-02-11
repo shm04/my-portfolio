@@ -620,6 +620,24 @@ body {
   display: none;
 }
 
+.error-message {
+  display: none;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: #900;
+  border-radius: 4px;
+  height: 15px;
+  margin-left: 18px;
+  margin-right: 14px;
+  margin-bottom: 8px;
+  width: fit-content;
+  background: rgb(245, 182, 182);
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
 @media only screen and (min-width: 768px) {
   body {
     background-image: none;
@@ -637,11 +655,12 @@ body {
     transform: translate(0);
     display: flex;
     flex-direction: row;
-    width: -webkit-fill-available;
+    width: 100%;
     height: -webkit-fill-available;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
+    padding: 0;
   }
 
   .nav-sec {
@@ -961,18 +980,18 @@ body {
   .search1 {
     width: 254px;
     height: 60px;
-    margin: 0 35px 20px 0;
+    margin: 0 35px 0 0;
   }
 
   .search2 {
     width: 254px;
     height: 60px;
-    margin: 0 0 20px 0;
+    margin: 0;
   }
 
   .search3 {
     width: 549px;
-    margin: 0;
+    margin: 20px 0 0 0;
     height: 142px;
   }
 
@@ -1180,5 +1199,9 @@ body {
 
   .one:hover {
     z-index: 101;
+  }
+
+  .error-message {
+    margin: 8px 0 0 295px;
   }
 }
