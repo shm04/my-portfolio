@@ -516,14 +516,16 @@ body {
 .popup-four,
 .popup-five,
 .popup-six {
-  width: 100%;
-  height: fit-content;
+  width: -webkit-fill-available;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   left: 0;
+  top: 0;
   background-color: #fff;
   z-index: 100;
+  overflow-y: scroll;
 }
 
 .close-btn-popup {
@@ -616,30 +618,6 @@ body {
 
 .arrow-btns {
   display: none;
-}
-
-.popup {
-  top: 781px;
-}
-
-.popup-two {
-  top: 1175px;
-}
-
-.popup-three {
-  top: 1570px;
-}
-
-.popup-four {
-  top: 1964px;
-}
-
-.popup-five {
-  top: 2358px;
-}
-
-.popup-six {
-  top: 2752px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1071,8 +1049,9 @@ body {
   .popup-four,
   .popup-five,
   .popup-six {
-    top: 1190px;
+    top: 0;
     background: rgba(26, 34, 54, 0.95);
+    overflow-y: scroll;
   }
 
   .sub-container {
@@ -1138,7 +1117,8 @@ body {
 
   .buttons {
     flex-direction: row;
-    margin: 0 0 120px 300px;
+    margin: 0 0 120px 0;
+    justify-content: center;
   }
 
   .see-live,
