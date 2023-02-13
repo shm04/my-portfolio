@@ -59,7 +59,7 @@ const projects = {
   projectOne: {
     title: 'Project One',
     languages: ['HTML/CSS', 'Ruby on Rials', 'JavaScipt'],
-    imgURL: ['../imgs/img1.jpg'],
+    imgURL: ['/imgs/img1.jpg'],
     content: 'Project one description...',
     live: '#',
     source: '#',
@@ -68,7 +68,7 @@ const projects = {
   projectTwo: {
     title: 'Project Two',
     languages: ['HTML/CSS', 'Ruby on Rials', 'JavaScipt'],
-    imgURL: ['../imgs/img2.jpg'],
+    imgURL: ['/imgs/img2.jpg'],
     content: 'Project two description...',
     live: '#',
     source: '#',
@@ -77,7 +77,7 @@ const projects = {
   projectThree: {
     title: 'Project Three',
     languages: ['HTML/CSS', 'Ruby on Rials', 'JavaScipt'],
-    imgURL: ['../imgs/img3.jpg'],
+    imgURL: ['/imgs/img3.jpg'],
     content: 'Project three description...',
     live: '#',
     source: '#',
@@ -86,7 +86,7 @@ const projects = {
   projectFour: {
     title: 'Project Four',
     languages: ['HTML/CSS', 'Ruby on Rials', 'JavaScipt'],
-    imgURL: ['../imgs/img4.jpg'],
+    imgURL: ['/imgs/img4.jpg'],
     content: 'Project four description...',
     live: '#',
     source: '#',
@@ -95,7 +95,7 @@ const projects = {
   projectFive: {
     title: 'Project Five',
     languages: ['HTML/CSS', 'Ruby on Rials', 'JavaScipt'],
-    imgURL: ['../imgs/img5.jpg'],
+    imgURL: ['/imgs/img5.jpg'],
     content: 'Project five description...',
     live: '#',
     source: '#',
@@ -104,7 +104,7 @@ const projects = {
   projectSix: {
     title: 'Project Six',
     languages: ['HTML/CSS', 'Ruby on Rials', 'JavaScipt'],
-    imgURL: ['../imgs/img6.jpg'],
+    imgURL: ['/imgs/img6.jpg'],
     content: 'Project six description...',
     live: '#',
     source: '#',
